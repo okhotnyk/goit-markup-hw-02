@@ -1,0 +1,94 @@
+:root {
+  /* Palette */
+  --brand-accent-color: #2196f3;
+  --brand-background: #2f303a;
+  --second-background: #f5f4fa;
+  /*    var(--second-background) is also for buttons */
+  --title-text-color: #212121;
+  --primary-text-color: #757575;
+  --contrast-text-color: #ffffff;
+}
+
+body {
+  background-color: #ffffff;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.logo-color {
+  color: var(--brand-accent-color);
+}
+
+.link-logo {
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  color: #000000;
+}
+
+/* .link-logo:hover {
+    color: #2196F3;
+} */
+
+.link-logo:visited {
+  color: black;
+}
+
+.navigation {
+  list-style: none;
+  color: var(--brand-accent-color);
+}
+
+.nav-link {
+  text-decoration: none;
+  color: var(--title-text-color);
+}
+.nav-link:hover {
+  color: var(--brand-accent-color);
+}
+
+.contact-list {
+  list-style: none;
+}
+
+.hero {
+  color: var(--contrast-text-color);
+  background-color: var(--brand-background);
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 60px;
+  letter-spacing: 6%;
+  text-transform: uppercase;
+  padding-top: 200px;
+  padding-bottom: 280px;
+  padding-left: 452px;
+  padding-right: 452px;
+  /* why doesn't work right padding */
+}
+
+.button {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.button.primary {
+  background-color: var(--brand-accent-color);
+  color: var(--contrast-text-color);
+}
+
+.particularities .title {
+  display: none;
+}
+
+.particularities-list {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  list-style: none;
+}
+/* 
+.particularities-item {
+  text-align: start;
+} */
