@@ -180,6 +180,7 @@ body {
 .address-negative {
   color: var(--contrast-text-color);
   letter-spacing: 0.03rem;
+  font-style: normal;
 }
 
 .address-contact {
@@ -187,7 +188,7 @@ body {
   opacity: 60%;
 }
 
-/* Стили для portfolio.html */
+/* Styles for portfolio.html */
 
 .button-secondary {
   background-color: var(--second-background);
