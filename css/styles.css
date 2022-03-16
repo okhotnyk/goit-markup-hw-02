@@ -11,67 +11,85 @@
 
 body {
   background-color: #ffffff;
-  font-family: "Raleway", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
-  font-size: 12px;
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--title-text-color);
 }
 
 .logo-color {
   color: var(--brand-accent-color);
 }
 
-.link-logo {
+.link {
   text-decoration: none;
+}
+
+.link-logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
+  line-height: normal;
   color: #000000;
 }
 
 .link-logo:visited {
   color: #000000;
 }
-/* Навигация по сайту */
-.navigation {
+/* Site navigation */
+.list {
   list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.site-navigation {
+  line-height: normal;
+  letter-spacing: 2%;
 }
 
 .nav-link {
-  text-decoration: none;
   color: var(--title-text-color);
   font-family: "Roboto", sans-serif;
-  font-size: 14px;
+  line-height: normal;
+  letter-spacing: 0.02rem;
 }
-.nav-link:hover {
+
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--brand-accent-color);
+}
+
+.site-navigation .nav-link.current {
   color: var(--brand-accent-color);
 }
 
 /* Меню контакты */
-.contact-list,
+.navitaion-contact,
 .address-list {
   list-style: none;
 }
 
 .contact-item {
-  text-decoration: none;
-  color: var(--primary-text-color);
   font-family: "Roboto", sans-serif;
-  font-size: 14px;
+  color: var(--primary-text-color);
 }
 
-.contact-item:hover {
+.contact-item:hover,
+.contact-item:focus {
   color: var(--brand-accent-color);
 }
 
 .hero {
   color: var(--contrast-text-color);
   background-color: var(--brand-background);
-  font-family: "Roboto", sans-serif;
   font-weight: 900;
   font-size: 44px;
-  line-height: 60px;
-  letter-spacing: 6%;
+  line-height: 1.36;
+  letter-spacing: 0.06rem;
   text-transform: uppercase;
+
   padding-top: 200px;
   padding-bottom: 280px;
   padding-left: 452px;
@@ -81,7 +99,8 @@ body {
 
 .button {
   font-size: 16px;
-  font-weight: bold;
+  line-height: 1.88;
+  font-weight: 500;
 }
 
 .button.primary {
@@ -93,54 +112,36 @@ body {
   display: none;
 }
 
-.particularities-list {
-  font-family: "Roboto", sans-serif;
-  font-size: 14px;
-  list-style: none;
-}
-/* 
-.particularities-item {
-  text-align: start;
-} */
-
 .item-title {
-  font-family: "Roboto", sans-serif;
-  font-size: 14px;
-  font-weight: bold;
+  font-weight: 700;
+  letter-spacing: 0.03rem;
   text-transform: uppercase;
   color: var(--title-text-color);
 }
 
 .item-text {
-  font-family: "Roboto", sans-serif;
-  font-size: 14px;
+  letter-spacing: 0.03rem;
   color: var(--primary-text-color);
 }
 
+/* What we do */
 .section-title {
-  color: var(--title-text-color);
-  font-family: "Roboto", sans-serif;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 36px;
-  line-height: 42px;
-  letter-spacing: 3%;
+  line-height: normal;
+  letter-spacing: 0.03rem;
+  color: var(--title-text-color);
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 300px;
+
+  text-align: center;
 }
 
-.production-list {
-  list-style: none;
-}
-
-/* Команда */
+/* Team */
 
 .team-section {
   background-color: var(--second-background);
-}
-
-.team-list {
-  list-style: none;
 }
 
 .team-card {
@@ -148,49 +149,53 @@ body {
 }
 
 .team-name {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
   font-size: 16px;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.03rem;
   color: var(--title-text-color);
 }
 
 .team-position {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
   font-size: 16px;
+  line-height: normal;
+  letter-spacing: 0.03rem;
   color: var(--primary-text-color);
 }
 
 .footer {
   background-color: var(--brand-background);
   color: var(--contrast-text-color);
+  letter-spacing: 0.03rem;
+
   padding-top: 30px;
   padding-left: 90px;
 }
 
-.logo-negative {
-  color: var(--contrast-text-color);
-}
-
+.logo-negative,
 .logo-negative:visited {
   color: var(--contrast-text-color);
 }
 
 .address-negative {
   color: var(--contrast-text-color);
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 3%;
+  letter-spacing: 0.03rem;
 }
 
-.address-list {
-  list-style: none;
-}
 .address-contact {
   color: var(--contrast-text-color);
   opacity: 60%;
-  line-height: 24px;
+}
+
+/* Стили для portfolio.html */
+
+.button-secondary {
+  background-color: var(--second-background);
+  color: var(--title-text-color);
+}
+
+.button-secondary:hover,
+.button-secondary:focus {
+  background-color: var(--brand-accent-color);
+  color: var(--contrast-text-color);
 }
