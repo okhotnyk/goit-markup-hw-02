@@ -46,7 +46,7 @@ body {
 
 .site-navigation {
   line-height: normal;
-  letter-spacing: 2%;
+  letter-spacing: 0.02rem;
 }
 
 .nav-link {
@@ -65,14 +65,9 @@ body {
   color: var(--brand-accent-color);
 }
 
-/* Меню контакты */
-.navitaion-contact,
-.address-list {
-  list-style: none;
-}
+/* Menu Contacts */
 
 .contact-item {
-  font-family: "Roboto", sans-serif;
   color: var(--primary-text-color);
 }
 
@@ -94,7 +89,7 @@ body {
   padding-bottom: 280px;
   padding-left: 452px;
   padding-right: 452px;
-  /* why right padding doesn't work */
+  /* why right padding doesn't work? */
 }
 
 .button {
@@ -189,6 +184,9 @@ body {
 }
 
 /* Styles for portfolio.html */
+.examples .title {
+  display: none;
+}
 
 .button-secondary {
   background-color: var(--second-background);
