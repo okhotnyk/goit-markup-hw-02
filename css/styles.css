@@ -178,6 +178,11 @@ body {
   opacity: 60%;
 }
 
+.address-contact:hover,
+.address-contact:focus {
+  color: var(--brand-accent-color);
+}
+
 /* Styles for portfolio.html */
 .examples .title {
   display: none;
