@@ -11,26 +11,28 @@
 
 body {
   background-color: #ffffff;
+  color: var(--title-text-color);
+
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
-  color: var(--title-text-color);
-}
-
-.logo-color {
-  color: var(--brand-accent-color);
+  letter-spacing: 0.03em;
 }
 
 .link {
   text-decoration: none;
 }
 
+.logo-color {
+  color: var(--brand-accent-color);
+}
+
 .link-logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
-  line-height: normal;
+  line-height: 1.2;
   color: #000000;
 }
 
@@ -45,15 +47,14 @@ body {
 }
 
 .site-navigation {
-  line-height: normal;
-  letter-spacing: 0.02rem;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
 }
 
 .nav-link {
   color: var(--title-text-color);
-  font-family: "Roboto", sans-serif;
-  line-height: normal;
-  letter-spacing: 0.02rem;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
 }
 
 .nav-link:hover,
@@ -82,7 +83,7 @@ body {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  letter-spacing: 0.06rem;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
 
   padding-top: 200px;
@@ -96,6 +97,7 @@ body {
   font-size: 16px;
   line-height: 1.88;
   font-weight: 500;
+  cursor: pointer;
 }
 
 .button.primary {
@@ -109,13 +111,11 @@ body {
 
 .item-title {
   font-weight: 700;
-  letter-spacing: 0.03rem;
   text-transform: uppercase;
   color: var(--title-text-color);
 }
 
 .item-text {
-  letter-spacing: 0.03rem;
   color: var(--primary-text-color);
 }
 
@@ -123,8 +123,7 @@ body {
 .section-title {
   font-weight: 700;
   font-size: 36px;
-  line-height: normal;
-  letter-spacing: 0.03rem;
+  line-height: 1.2;
   color: var(--title-text-color);
   padding-top: 20px;
   padding-bottom: 20px;
@@ -146,22 +145,19 @@ body {
 .team-name {
   font-size: 16px;
   font-weight: 500;
-  line-height: normal;
-  letter-spacing: 0.03rem;
+  line-height: 1.2;
   color: var(--title-text-color);
 }
 
 .team-position {
   font-size: 16px;
-  line-height: normal;
-  letter-spacing: 0.03rem;
+  line-height: 1.2;
   color: var(--primary-text-color);
 }
 
 .footer {
   background-color: var(--brand-background);
   color: var(--contrast-text-color);
-  letter-spacing: 0.03rem;
 
   padding-top: 30px;
   padding-left: 90px;
@@ -174,7 +170,6 @@ body {
 
 .address-negative {
   color: var(--contrast-text-color);
-  letter-spacing: 0.03rem;
   font-style: normal;
 }
 
@@ -211,13 +206,12 @@ body {
   font-size: 18px;
   font-weight: 700;
   line-height: 2;
-  letter-spacing: 0.06rem;
+  letter-spacing: 0.06em;
   color: var(--title-text-color);
 }
 
 .example-type {
   font-size: 16px;
   line-height: 1.88;
-  letter-spacing: 0.03rem;
   color: var(--primary-text-color);
 }
