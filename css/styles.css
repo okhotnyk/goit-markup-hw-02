@@ -1,6 +1,7 @@
 :root {
   /* Palette */
   --brand-accent-color: #2196f3;
+  --accent-color-hover: #188ce8;
   --brand-background: #2f303a;
   --second-background: #f5f4fa;
   /*    var(--second-background) is also for buttons */
@@ -46,15 +47,15 @@ body {
   margin: 0;
 }
 
-.site-navigation {
+.site-navigation,
+.contact-navigation {
+  font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
 }
 
 .nav-link {
   color: var(--title-text-color);
-  line-height: 1.2;
-  letter-spacing: 0.02em;
 }
 
 .nav-link:hover,
@@ -78,8 +79,11 @@ body {
 }
 
 .hero {
-  color: var(--contrast-text-color);
   background-color: var(--brand-background);
+}
+
+.hero h1 {
+  color: var(--contrast-text-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -97,6 +101,7 @@ body {
   font-size: 16px;
   line-height: 1.88;
   font-weight: 500;
+  letter-spacing: 0.06em;
   cursor: pointer;
 }
 
@@ -105,12 +110,20 @@ body {
   color: var(--contrast-text-color);
 }
 
-.particularities .title {
+.button.primary:hover,
+.button.primary:focus {
+  background-color: var(--accent-color-hover);
+}
+
+/* Наши особенности */
+
+.particularities .section-title {
   display: none;
 }
 
 .item-title {
   font-weight: 700;
+  line-height: 1.2;
   text-transform: uppercase;
   color: var(--title-text-color);
 }
@@ -123,8 +136,9 @@ body {
 .section-title {
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.2;
+  line-height: 1.17;
   color: var(--title-text-color);
+
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 300px;
@@ -134,27 +148,26 @@ body {
 
 /* Team */
 
-.team-section {
+.team {
   background-color: var(--second-background);
 }
 
 .team-card {
   background-color: var(--contrast-text-color);
+  font-size: 16px;
+  line-height: 1.17;
 }
 
 .team-name {
-  font-size: 16px;
   font-weight: 500;
-  line-height: 1.2;
   color: var(--title-text-color);
 }
 
 .team-position {
-  font-size: 16px;
-  line-height: 1.2;
   color: var(--primary-text-color);
 }
 
+/* Футер */
 .footer {
   background-color: var(--brand-background);
   color: var(--contrast-text-color);
@@ -184,17 +197,19 @@ body {
 }
 
 /* Styles for portfolio.html */
+
 .examples .title {
   display: none;
 }
 
-.button-secondary {
+.button.secondary {
   background-color: var(--second-background);
   color: var(--title-text-color);
+  line-height: 1.63;
 }
 
-.button-secondary:hover,
-.button-secondary:focus {
+.button.secondary:hover,
+.button.secondary:focus {
   background-color: var(--brand-accent-color);
   color: var(--contrast-text-color);
 }
